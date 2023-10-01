@@ -1,0 +1,179 @@
+/*reset all*/
+*
+	{
+	border: 0;
+	margin:0;
+	padding:0;
+	background-color: #FFF;
+	}
+body 
+	{
+		width : 800px;
+		margin: auto;
+	}
+img
+	{
+		width: 100px;
+	}
+
+/* DEBUGGING just for understanding what is what*/	
+/*
+#mainmenu
+	{
+		background-color: #F0F;		
+	}
+#company_payoff
+	{
+		background-color: #F3F;
+	}
+#company_aside
+	{
+		background-color: #F5F;
+	}
+#company_aside_video
+	{
+		background-color: #F57;
+	}
+.company_aside_pic
+	{
+		background-color: #F51;
+	}
+.main_article
+	{
+		background-color: #F7F;
+	}
+#company_footer
+	{
+		background-color: #F9F;
+	}
+#company_footer_section_1
+	{
+		background-color: #F97;
+	}
+#company_footer_section_2
+	{
+		background-color: #F93;
+	}
+*/ 
+
+/* MAIN MENU */ 
+#mainmenu > a
+	{			
+		width : 20%;
+		height: 100%;
+		float: left;				
+	}
+#mainmenu > a > img
+	{
+		display: block; 			/* img is in the <a> container and can take all space */
+		margin: auto; 				/*center img to the <a> block */	
+		height: 100%;			
+	}	
+#mainmenu > ul
+	{
+		width : 60%;
+		line-height: 7em;
+		float : left;
+		text-align: center;
+	}
+#mainmenu > ul > li
+	{	
+		display: inline;			/* <li> items are normaly block elements and have to be inline (horzontal) instead of block (vertical) now */
+	}
+#mainmenu > form
+	{
+		width : 20%; 
+		line-height: 7em;
+		float : left;
+	}
+#mainmenu > form > h3
+	{
+		text-align: center;
+	}
+
+
+
+/* COMPANMY PAYOFF */ 	
+#company_payoff
+	{
+	clear : both; 					/* otherwise it will fillup the "left "space from mainmenu  */
+	padding-top : 2em;	
+	padding-bottom : 2em;	
+	}
+
+#company_payoff > h1, #company_payoff > h2
+	{
+		text-align: center;	
+		text-transform: uppercase;	
+	}
+
+/* COMPANMY PAYOFF */ 	
+
+#company_aside > video
+	{ 
+		float: left;
+		width: 80%;
+	}
+#company_aside > a
+	{
+		float: left;	
+		width: 20%;	
+	}
+
+/* MAIN content */ 	
+main	
+	{
+		clear: both;
+		width: 100%;
+	}
+main > .main_article
+	{		
+		width: 50%;
+		float: left;
+	}
+main > .main_article > a	
+	{
+		float: left;
+	}
+
+
+/* Company footer */ 	
+#company_footer
+	{		
+		clear: both;
+		width: 100%;
+	}
+
+#company_footer_section_1
+	{
+		width: 30%;
+		float: left;
+	}
+
+#company_footer_section_2
+	{
+		width: 70%;
+		float: left;
+	}
+
+#company_footer_section_2 > aside
+	{
+		width: 30%;
+		float: left;
+	}
+#company_footer_section_2 > article
+	{
+		width: 30%;
+		float: left;
+	}
+
+#company_footer_section_2 > section
+	{
+		width: 40%;
+		float: left;
+	}	
+#company_footer_section_2 > section > a > img
+	{
+		width: 20%; 
+		margin: 5%;
+	}
